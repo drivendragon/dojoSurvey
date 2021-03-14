@@ -4,6 +4,8 @@ from . import views
 urlpatterns = [
         path('', views.index),
         path('result', views.result),
+        path('thanks', views.thanks),
+        path('<url>', views.catch_all),
        # path('bears', views.one_method),                        # would only match localhost:8000/bears
       #  path('bears/<int:my_val>', views.another_method),       # would match localhost:8000/bears/23
       #  path('bears/<str:name>/poke', views.yet_another),       # would match localhost:8000/bears/pooh/poke
