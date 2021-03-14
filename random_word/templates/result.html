@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dojo Survey Result</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+        <script src="{% static 'js/script.js' %}"></script>
+        
+    </head>
+    <body>
+      <p>Dojo Survey Result</p>
+      {{request.session.name}}
+      {{request.session.location}}
+      {{request.session.language}}
+      {{request.session.description}}
+    
+     <p> random string here: {{request.session.cat}} </p>
+    </body>
+</html>
+    
