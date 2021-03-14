@@ -10,12 +10,12 @@
     </head>
     <body>
       <p>Dojo Survey Result</p>
-      {{request.session.name}}
-      {{request.session.location}}
-      {{request.session.language}}
-      {{request.session.description}}
-    
-     <p> random string here: {{request.session.cat}} </p>
+        {{request.session.name}}
+        <p> cat here: {{request.session.cat}} </p>
+        <hr>
+        <hr> <p> random word here: {{request.session.word}}</p>
+        <p> random string here: {{request.session.cat}} </p>
+        {{request.session.counter}}
     </body>
 </html>
     

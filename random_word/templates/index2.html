@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dojo Survey</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+        <script src="{% static 'js/script.js' %}"></script>
+        
+    </head>
+    <body>
+       <p> cat here: {{cat}} </p>
+        <form action="/random_word" method="post">
+            {% csrf_token %}
+            <p>Random Word (attempt # )</p>
+            <hr> <p> random word here: {{request.session.word}}</p>
+            <input type="submit" value="Generate">
+        </form>
+                      {{request.session.name}}
+        <p> cat here: {{request.session.cat}} </p>
+        <hr>
+        <hr> <p> random word here: {{request.session.word}}</p>
+           {{request.session.counter}}
+    </body>
+</html>
+  <!---{{request.session.randomWordGenerated}}-->
